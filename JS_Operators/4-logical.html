@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Javascript Logical Operators
+      // Membandingkan dua nilai yang kedua nilai tersebut outputnya adalah boolean
+      // hasil dari operator ini bernilai boolean (true atau false)
+      var a = 10;
+      var b = 40;
+      var c = "10";
+      var d = false;
+
+      // &&	logical and => Wajib keduanya bernilai true, maka outputnya true
+      var andBenar = a < b && a == c;
+      var andSalah = a < b && a === c;
+
+      // console.log(andBenar);
+      // console.log(andSalah);
+
+      // ||	logical or => salah satunya bernilai true, maka outputnya true
+      var orBenar = a < b || a === c;
+      var orSalah = a > b || a === c;
+
+      // console.log(orBenar);
+      // console.log(orSalah);
+
+      // !	logical not
+      var newNot = !d;
+      console.log(newNot);
+
+      // MODUL
+      // Kerjakan menggunakan operator logical sesuai petunjuk berikut
+      //*. nilai akhir operator and (&&) jika nilai sisi kiri b > a, sisi kanan a == a
+
+      //*. nilai akhir operator or (||) jika nilai sisi kiri b > a, sisi kanan a != a
+
+      //
+    </script>
+  </body>
+</html>
