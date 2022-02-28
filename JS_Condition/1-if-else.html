@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional (If Else)</title>
+    <link rel="stylesheet" href="./CSS/1-if-else.css" />
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <button id="newBtn"></button>
+
+    <script>
+      // Variable userRole berisi value role user (admin, customer, CEO)
+      var userRole = "admin"; // => Ganti jadi admin, customer, CEO
+
+      // DOM untuk title (tag h1 di html)
+      var domTitle = document.getElementById("title");
+
+      // Gunakan if, else untuk mengatur kondisi UI.
+      // Gunakan operator comparison (perbandingan).
+      if (userRole === "admin") {
+        domTitle.innerText = "ADMIN";
+      } else {
+        domTitle.innerText = "CUSTOMER REGULER";
+      }
+
+      // <--- MODUL --->
+      // Buatlah 3 kondisi menggunakan if, else if dan else
+      // Ubahlah button dibawah sesuai dengan user role nya
+      // Tambah value utk attribute class dengan menggunakan operator assignment (+=)
+
+      var domBtn = document.getElementById("newBtn");
+
+      if (userRole === "admin") {
+        domBtn.innerText = "ADMIN";
+        domBtn.classList += " btn-admin";
+        // silahkan lanjutkan utk kondisi Role User Customer & CEO
+      }
+      // else if () {
+
+      // }
+      // else {
+
+      // }
+
+      //
+    </script>
+  </body>
+</html>

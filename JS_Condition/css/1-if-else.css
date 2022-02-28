@@ -1,0 +1,19 @@
+#title {
+  font-size: 100px;
+}
+button {
+  border: none;
+  padding: 8px 32px;
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+}
+.btn-admin {
+  background-color: aqua;
+}
+.btn-customer {
+  background-color: green;
+}
+.btn-ceo {
+  background-color: yellow;
+}
