@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Looping Array (FOR)</title>
+    <style>
+      #list {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list"></ul>
+
+    <script>
+      // Looping bisa diartikan sebagai perulangan
+      // instruksi untuk melakukan pengulangan proses sesuai dengan perintah
+
+      var fruits = ["Mangga", "Nenas", "Jeruk", "Apple"];
+
+      // DOM list (id list)
+      var listContainer = document.getElementById("list");
+
+      for (let i = 0; i < fruits.length; i++) {
+        // Buat element 'li' baru
+        var newList = document.createElement("li");
+        // Isi konten text list dengan hasil looping
+        newList.innerText = fruits[i];
+        // Gabungkan ke parentnya, parentnya itu adalah variable listContainer
+        listContainer.appendChild(newList);
+      }
+    </script>
+  </body>
+</html>

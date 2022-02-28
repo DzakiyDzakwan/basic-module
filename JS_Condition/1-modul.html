@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modul Conditional (If Else)</title>
+    <link rel="stylesheet" href="./CSS/1-if-else.css" />
+  </head>
+  <body>
+    <button id="newBtn"></button>
+
+    <script>
+      // <--- MODUL --->
+      // Buatlah 3 kondisi menggunakan if, else if dan else
+      // Ubahlah button dibawah sesuai dengan user role nya
+
+      var userRole = "admin"; // => Variable userRole berisi value role user (admin, customer, CEO)
+      var domBtn = document.getElementById("newBtn");
+
+      // silahkan lanjutkan utk kondisi untuk Role User Customer & CEO
+      // Uncomment code di bawah utk memulai pengerjaan
+
+      if (userRole === "admin") {
+        domBtn.innerText = "ADMIN";
+        domBtn.classList += " btn-admin"; // => Tambah value utk attribute class dengan menggunakan operator assignment (+=), cek file css utk mengetahui class yg tersedia
+      }
+      // else if () {
+
+      // }
+      // else {
+
+      // }
+
+      //
+    </script>
+  </body>
+</html>
