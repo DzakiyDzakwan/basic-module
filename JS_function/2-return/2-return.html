@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Return</title>
+  </head>
+  <body>
+    <script>
+      // Function return adalah sebuah function yang memberikan...
+      // nilai akhir berupa sebuah type data baru (string, number, object, boolean atau array)
+      // ada "return" di akhir function
+      // setiap code setelah return tidak akan dieksekusi
+
+      function setTitle() {
+        var firstName = "Digidev";
+        var lastName = "Indonesia";
+        var age = 2;
+
+        return `${firstName} ${lastName}, umur ${age} tahun`;
+      }
+      console.log(setTitle());
+      console.log(typeof setTitle()); // cek tipe data
+    </script>
+  </body>
+</html>
