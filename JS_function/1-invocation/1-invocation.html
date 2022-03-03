@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Invocations</title>
+  </head>
+  <body>
+    <h1 id="header"></h1>
+
+    <script>
+      // Function invocation adalah cara untuk memanggil function
+      // stepnya:
+      // 1. Inisiasi sebuah function
+      // 2. Panggil nama function setelah inisiasinya, namaFunction()
+
+      // Example:
+
+      // 1. Inisiasi
+      function setValueHeader() {
+        var domHeader = document.getElementById("header");
+        domHeader.innerText = "Hello from Digidev Indonesia";
+      }
+
+      // 2. Panggil function tsb
+      setValueHeader();
+    </script>
+  </body>
+</html>
