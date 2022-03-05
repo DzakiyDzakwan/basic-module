@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Push</title>
+  </head>
+  <body>
+    <ul id="list"></ul>
+    <input type="text" id="input" />
+    <button id="button">Tambah Aktivitas</button>
+
+    <script>
+      // push berguna untuk menambah element array baru pada array yg sudah ada
+      var activities = ["tidur", "makan", "lari", "belajar"];
+
+      // contoh sederhana
+      activities.push("main");
+      console.log(activities);
+
+      // contoh di keadaan real
+      var containerList = document.getElementById("list");
+
+      function createList() {
+        activities.forEach((element) => {
+          var newList = document.createElement("li");
+          newList.innerHTML = element;
+          containerList.appendChild(newList);
+        });
+      }
+      createList();
+
+      var buttonAddActivity = document.getElementById("button");
+      buttonAddActivity.addEventListener("click", () => {
+        var inputActivity = document.getElementById("input");
+        activities.push(inputActivity.value);
+        containerList.innerHTML = "";
+        createList();
+        inputActivity.value = "";
+      });
+    </script>
+  </body>
+</html>
