@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Class List</title>
+    <style>
+      .urgent {
+        color: red;
+        font-size: 40px;
+      }
+      .primary {
+        color: green;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title" class="heading">DIGIDEV</h1>
+    <h1 class="heading">PT. DIGITAL LENTERA BANGSA</h1>
+
+    <script>
+      // Class list berguna untuk menambah class name pada element html
+      var firstHeader = document.getElementsByClassName("heading");
+      firstHeader[0].classList += " urgent";
+
+      // <---- Modul ----->
+      // Instruksi:
+      // Tambahkan class primary pada element heading dengan konten PT. DIGITAL LENTERA BANGSA
+
+      //
+    </script>
+  </body>
+</html>

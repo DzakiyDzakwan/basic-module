@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Create Element</title>
+  </head>
+  <body>
+    <!-- Kontainer utama di dalam html -->
+    <div id="container"></div>
+
+    <script>
+      // Create element adalah instruksi yang dilakukan di JS
+      // yg berguna untuk menciptakan element baru
+      // Step:
+      // 1. Siapkan kontainer utama di element HTML. Get element utk kontainer utama tsb dan masukkan ke dalam sebuah variable
+      var container = document.getElementById("container");
+      // 2. Buat element baru dengan menggunakan document.createElement("nama tag")
+      var newHeading = document.createElement("h1");
+      newHeading.innerHTML = "DIGIDEV INDONESIA";
+      // 3. Lakukan proses penggabungan element baru ke kontainer yg sudah disiapkan menggunakan metode appendChild
+      container.appendChild(newHeading);
+
+      // <----- Modul ----->
+      // Instruksi:
+      // Buatlah element baru berupa button, dgn tulisan SUBMIT
+      // Gabungkan element baru ini ke container utama yg sudah disiapkan diatas dengan menggunakan append child
+
+      //
+    </script>
+  </body>
+</html>
