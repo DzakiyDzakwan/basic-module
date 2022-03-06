@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Forms & Inputs</title>
+	</head>
+	<body>
+		<!-- ELEMEN INPUT -->
+		<!-- ELemen input berfungsi untuk menerima data dari user -->
+		<!-- Elemen input memiliki beberapa tipe yang bisa ditentukan dari atribut 'type' -->
+
+		<!-- Input text -->
+		<input type="text" placeholder="input your name..." />
+		<br />
+
+		<!-- Input checkbox -->
+		<br />
+		<input type="checkbox" name="kelas" id="html-class" />
+		<label for="html-class">html</label>
+		<br />
+		<input type="checkbox" name="kelas" id="css-class" />
+		<label for="css-class">css</label>
+		<br />
+		<input type="checkbox" name="kelas" id="js-class" />
+		<label for="js-class">javascript</label>
+		<br />
+
+		<!-- Input radio button -->
+		<br />
+		<input type="radio" name="materi" id="html" />
+		<label for="html">HTML</label>
+		<br />
+		<input type="radio" name="materi" id="css" />
+		<label for="css">CSS</label>
+		<br />
+		<input type="radio" name="materi" id="javascript" />
+		<label for="javascript">JAVASCRIPT</label>
+		<br />
+
+		<!-- input button -->
+		<br />
+		<input type="button" value="click me" />
+		<br />
+
+		<!-- Input date -->
+		<br />
+		<input type="date" />
+		<br />
+
+		<!-- Input file -->
+		<br />
+		<input type="file" />
+		<br />
+		<br />
+
+		<!-- ELEMEN BUTTON -->
+		<!-- Elemen button memiliki fungsi yang sama dengan elemen input tipe button -->
+		<!-- Elemen ini menggunakan closing tag sehingga lebih banyak konten yang bisa dimasukkan di dalam tombol -->
+		<button>
+			<img
+				style="width: 10px"
+				src="https://e7.pngegg.com/pngimages/350/590/png-clipart-black-cursor-icon-computer-mouse-pointer-cursor-mouse-cursor-angle-electronics-thumbnail.png"
+				alt="icon click"
+			/>
+			click me
+		</button>
+		<br /><br />
+
+		<!-- ELEMEN SELECT -->
+		<!-- Elemen select berguna jika kita ingin membuat input pilihan dalam bentuk menu dropdown -->
+		<select>
+			<option value="html">HTML</option>
+			<option value="html">CSS</option>
+			<option value="html">JAVASCRIPT</option>
+		</select>
+		<br /><br />
+
+		<!-- ELEMEN FORMS -->
+		<!-- Elemen forms adalah elemen yang membungkus elemen-elemen input -->
+		<form action="http://digidev.id">
+			<label for="fname">First name:</label><br />
+			<input type="text" id="fname" placeholder="first name.." /><br />
+			<label for="lname">Last name:</label><br />
+			<input type="text" id="lname" placeholder="last name.." /><br /><br />
+			<input type="submit" value="Submit" />
+		</form>
+
+		<!-- =========================================================================================== -->
+		<!-- =========================================================================================== -->
+
+		<!-- Buatlah sebuah form pendaftaran sederhana seperti contoh gambar 6-form-dan-input.png -->
+		<!-- Your code starts here -->
+
+		<!-- Your code ends here -->
+	</body>
+</html>

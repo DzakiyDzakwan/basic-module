@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Form Attributes</title>
+	</head>
+	<body>
+		<!-- FORM ATTRIBUTE -->
+
+		<p>Daftar atribut pada elemen-elemen form:</p>
+		<ul>
+			<li>action</li>
+			<li>target</li>
+			<li>type</li>
+			<li>placeholder</li>
+			<li>name</li>
+			<li>for</li>
+			<li>value</li>
+			<li>checked</li>
+			<li>selected</li>
+			<li>readonly</li>
+			<li>disabled</li>
+		</ul>
+
+		<!-- Contoh -->
+		<h3>Contoh:</h3>
+		<form action="http://digidev.id" target="_blank">
+			<label for="firstName">Nama depan:</label><br />
+			<input type="text" id="firstName" placeholder="nama depan.." readonly />
+			<br />
+
+			<label for="lastName">Nama belakang:</label><br />
+			<input type="text" id="lastName" placeholder="nama belakang.." value="Jackson" disabled />
+			<br /><br />
+
+			<label>Jenis kelamin:</label><br />
+			<input type="radio" name="gender" id="man" value="man" />
+			<label for="man">Laki-laki</label>
+			<br />
+			<input type="radio" name="gender" id="woman" value="woman" checked disabled />
+			<label for="woman">Perempuan</label>
+			<br /><br />
+
+			<label>Kelas:</label><br />
+			<input type="checkbox" name="kelas" id="html-class" value="html" />
+			<label for="html-class">html</label>
+			<br />
+			<input type="checkbox" name="kelas" id="css-class" value="css" />
+			<label for="css-class">css</label>
+			<br />
+			<input type="checkbox" name="kelas" id="js-class" value="javascript" checked />
+			<label for="js-class">javascript</label>
+			<br /><br />
+
+			<label for="province">Provinsi:</label><br />
+			<select id="province" name="province">
+				<option value="sumut">Sumatera Utara</option>
+				<option value="sumbar" disabled>Sumatera Barat</option>
+				<option value="sumsel" selected>Sumatera Selatan</option>
+			</select>
+			<br /><br />
+
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>
