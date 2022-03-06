@@ -15,6 +15,21 @@
 		<input type="text" placeholder="input your name..." />
 		<br />
 
+		<!-- input button -->
+		<br />
+		<input type="button" value="click me" />
+		<br />
+
+		<!-- Input date -->
+		<br />
+		<input type="date" />
+		<br />
+
+		<!-- Input file -->
+		<br />
+		<input type="file" />
+		<br />
+
 		<!-- Input checkbox -->
 		<br />
 		<input type="checkbox" name="kelas" id="html-class" />
@@ -38,21 +53,6 @@
 		<input type="radio" name="materi" id="javascript" />
 		<label for="javascript">JAVASCRIPT</label>
 		<br />
-
-		<!-- input button -->
-		<br />
-		<input type="button" value="click me" />
-		<br />
-
-		<!-- Input date -->
-		<br />
-		<input type="date" />
-		<br />
-
-		<!-- Input file -->
-		<br />
-		<input type="file" />
-		<br />
 		<br />
 
 		<!-- ELEMEN BUTTON -->
@@ -70,10 +70,10 @@
 
 		<!-- ELEMEN SELECT -->
 		<!-- Elemen select berguna jika kita ingin membuat input pilihan dalam bentuk menu dropdown -->
-		<select>
+		<select name="kelas">
 			<option value="html">HTML</option>
-			<option value="html">CSS</option>
-			<option value="html">JAVASCRIPT</option>
+			<option value="css">CSS</option>
+			<option value="javascript">JAVASCRIPT</option>
 		</select>
 		<br /><br />
 
@@ -81,9 +81,9 @@
 		<!-- Elemen forms adalah elemen yang membungkus elemen-elemen input -->
 		<form action="http://digidev.id">
 			<label for="fname">First name:</label><br />
-			<input type="text" id="fname" placeholder="first name.." /><br />
+			<input type="text" id="fname" name="firstName" placeholder="first name.." /><br />
 			<label for="lname">Last name:</label><br />
-			<input type="text" id="lname" placeholder="last name.." /><br /><br />
+			<input type="text" id="lname" name="lastName" placeholder="last name.." /><br /><br />
 			<input type="submit" value="Submit" />
 		</form>
 
