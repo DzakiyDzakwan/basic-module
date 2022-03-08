@@ -1,0 +1,5 @@
+## Git clone, bermanfaat untuk melakukan cloning sebuah repository ke local kita
+## Cara melakukan Git Clone yaitu
+git clone <alamat repository>
+cth
+git clone https://github.com/digidevid/basic-module.git

@@ -1,0 +1,6 @@
+##
+
+## Console log berfungsi menampilkan data kita pada browser
+## Cara menggunakan console log
+1. Tampilkan data yg ingin di console => console.log(data)
+2. Buka browser, inspect, pilih console
