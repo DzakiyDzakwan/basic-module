@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Looping Array ForEach - Modul</title>
+    <style>
+      #list {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list"></ul>
+
+    <script>
+      // Variable smartphones merupakan array of object
+      // Berisi kumpulan dari smartphone
+      var smartphones = [
+        {
+          merk: "Iphone",
+          type: "13 Pro",
+          year: 2022,
+        },
+        {
+          merk: "Poco",
+          type: "F3",
+          year: 2021,
+        },
+        {
+          merk: "Samsung",
+          type: "Galaxy 10",
+          year: 2021,
+        },
+      ];
+
+      // DOM list (id list)
+      var listContainer = document.getElementById("list");
+
+      smartphones.forEach((element) => {
+        // tampilkan merk type - year
+      });
+    </script>
+  </body>
+</html>
