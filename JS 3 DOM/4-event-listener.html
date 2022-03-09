@@ -19,7 +19,7 @@
       var button = document.getElementById("btn");
       button.addEventListener("click", () => {
         var title = document.getElementById("title");
-        title.innerHTML = "DIGIDEV INDONESIA";
+        title.innerHTML = "DIGIDEV";
       });
 
       // <---- Modul ----->
@@ -27,8 +27,9 @@
       // Buatlah event listener di element input
       // setelah event ke trigger, lakukan function untuk merubah isi text dari element heading (title)
       var input = document.getElementById("inputText");
-      input.addEventListener("keyup", (e) => {
-        console.log(e.target.value);
+      input.addEventListener("keyup", (event) => {
+        // lanjutkan
+        console.log(event.target.value);
       });
       //
     </script>
