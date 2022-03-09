@@ -3,7 +3,9 @@
 ## Perintah Terminal (Git Bash)
 
 - mkdir nama-folder => Membuat Folder Baru
+  cth: mkdir basic
 - cd <nama folder> => Open sebuah folder
+  cd basic
 - cd .. => keluar dari sebuah folder
 - ls => list folder dan file
 - clear => bersihkan history terminal
