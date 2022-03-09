@@ -1,0 +1,18 @@
+##
+
+## Perintah Terminal (Git Bash)
+
+- mkdir nama-folder => Membuat Folder Baru
+- cd <nama folder> => Open sebuah folder
+- cd .. => keluar dari sebuah folder
+- ls => list folder dan file
+- clear => bersihkan history terminal
+- rmdir –r nama-folder => hapus sebuah folder
+- touch nama-file => buat sebuah file
+
+
+## Buatlah sebuah direktori baru dengan root folder seperti berikut
+
+/Documents/digidev/basic/pertemuan-1/
+/Documents/digidev/basic/pertemuan-2/
+/Documents/digidev/basic/pertemuan-1/tugas/
