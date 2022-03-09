@@ -10,8 +10,8 @@
 - rmdir –r nama-folder => hapus sebuah folder
 - touch nama-file => buat sebuah file
 
-
-## Buatlah sebuah direktori baru dengan root folder seperti berikut
+## Modul
+## Instruksi: Buatlah sebuah direktori baru dengan root folder seperti berikut
 
 /Documents/digidev/basic/pertemuan-1/
 /Documents/digidev/basic/pertemuan-2/
