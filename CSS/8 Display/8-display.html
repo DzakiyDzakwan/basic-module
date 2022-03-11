@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Display</title>
+	</head>
+	<body>
+		<!-- DISPLAY -->
+		<!-- Properti display mendeskripsikan bagaimana sebuah elemen di posisikan -->
+
+		<!-- Inline -->
+		<h4>Display Inline</h4>
+		<p class="inline">Display inline akan membuat sebuah elemen bersifat inline.</p>
+		<p class="inline">Yang artinya elemen tersebut akan di posisikan di sebelah kanan dari elemen sebelumnya atau tersusun secara horizontal.</p>
+		<p class="inline">Walaupun elemen tersebut merupakan elemen block level.</p>
+
+		<!-- Block -->
+		<h4>Display Block</h4>
+		<span class="block">Display block akan membuat sebuah elemen bersifat block.</span>
+		<span class="block">Display block akan membuat elemen tersusun secara vertikal.</span>
+
+		<!-- Inline Block -->
+		<h4>Display Inline Block</h4>
+		<p class="inline-block">Display inline block akan membuat elemen tersusun secara horizontal seperti elemen inline.</p>
+		<p class="inline-block">Namun elemen tersebut akan memiliki fitur block yaitu bisa di atur dimensi nya.</p>
+
+		<style>
+			.inline {
+				display: inline;
+			}
+			.block {
+				display: block;
+				background-color: goldenrod;
+				height: 60px;
+				margin-bottom: 10px;
+			}
+			.inline-block {
+				display: inline-block;
+				vertical-align: top;
+				background-color: paleturquoise;
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+	</body>
+</html>

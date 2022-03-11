@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Border, Width & Height</title>
+	</head>
+	<body>
+		<!-- BORDER -->
+		<!-- Border memberikan garis bingkai pada sebuah elemen -->
+		<p class="border-biru">Elemen ini memiliki border biru dengan ketebalan 5px</p>
+
+		<!-- WIDTH & HEIGHT -->
+		<!-- Properti width mengatur lebar dari elemen -->
+		<!-- Properti height mengatur tinggi dari elemen -->
+		<p class="pixel">Elemen ini memiliki lebar dan tinggi 300px, serta border 20px</p>
+
+		<div class="box">
+			<p class="persen">Elemen ini memiliki lebar 80% dan tinggi 50%</p>
+		</div>
+
+		<style>
+			.border-biru {
+				border: 5px solid blue;
+			}
+			.pixel {
+				width: 300px;
+				height: 300px;
+				border: 20px solid turquoise;
+			}
+			.box {
+				width: 300px;
+				height: 300px;
+				border: 2px solid black;
+			}
+			.persen {
+				width: 80%;
+				height: 50%;
+				border: 2px solid red;
+			}
+		</style>
+	</body>
+</html>

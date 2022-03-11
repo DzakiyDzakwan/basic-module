@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Position dan Z-Index</title>
+	</head>
+	<body>
+		<!-- POSITION -->
+
+		<!-- Static -->
+		<!-- Secara default semua elemen html memiliki position static -->
+		<!-- Position static tidak memiliki kondisi spesial. Ia selalu berada di posisi normal sebagaimana mestinya di halaman browser -->
+		<!-- Position static tidak akan terpengaruh oleh properti top, bottom, left dan right -->
+		<h3>Static</h3>
+		<div class="box"></div>
+		<div class="box static"></div>
+		<div class="box"></div>
+
+		<!-- Relative -->
+		<!-- Position relative diposisikan relatif terhadap dimana posisi normal nya -->
+		<!-- Properti top, bottom, left dan right akan menggeser posisi elemen dengan berpatokan pada posisi awalnya -->
+		<!-- Posisi elemen lain di sekitar elemen position relative tidak akan terpengaruh oleh pergeseran elemen position relative -->
+		<h3>Relative</h3>
+		<div class="box"></div>
+		<div class="box relative"></div>
+		<div class="box"></div>
+
+		<!-- Fixed -->
+		<!-- Position fixed akan memposisikan elemen relatif terhadap viewport -->
+		<!-- Jika kita men-scroll halaman maka elemen tersebut akan selalu berada pada posisi yang sama pada halaman -->
+		<h3>Fixed</h3>
+		<div class="box"></div>
+		<div class="box fixed"></div>
+		<div class="box"></div>
+
+		<!-- Absolute -->
+		<!-- Position absolute akan memposisikan elemen relatif terhadap parent element dengan position relative -->
+		<!-- Jika tidak terdapat parent dengan position relative maka position absolute akan menjadikan body sebagai patokan -->
+		<h3>Absolute</h3>
+		<div class="box"></div>
+		<div class="box absolute"></div>
+		<div class="box"></div>
+
+		<!-- Sticky -->
+		<!-- Position sticky akan memposisikan elemen berdasarkan posisi scroll dari user -->
+		<!-- Position sticky akan berganti antara relative dan fixed, bergantung pada posisi scroll -->
+		<!-- Elemen tersebut akan bersifat relative sampai ia berada di ujung viewport saat kita scroll, lalu ia akan berganti menjadi fixed -->
+		<h3>Sticky</h3>
+		<div class="box"></div>
+		<div class="box sticky"></div>
+		<div class="box"></div>
+
+		<!-- Z-INDEX -->
+		<!-- Ketika sebuah elemen memiliki properti position, maka akan ada kemungkinan saling menimpa antar elemen -->
+		<!-- Properti z-index mengatur posisi elemen akan berada di depan atau di belakang elemen lain saat saling menimpa -->
+		<!-- Properti ini bisa memiliki nilai negatif dan positif -->
+		<!-- Semakin besar nilai z-index nya maka semakin ke depan urutan posisi elemen tersebut -->
+		<h3>Z-index</h3>
+		<div class="container">
+			<div class="red-box"></div>
+			<div class="blue-box"></div>
+		</div>
+
+		<style>
+			.box {
+				background-color: greenyellow;
+				width: 200px;
+				height: 200px;
+				border: 2px solid black;
+			}
+			.static {
+				position: static;
+				top: 20px;
+				left: 30px;
+				background-color: red;
+			}
+			/* .relative {
+				position: relative;
+				top: 20px;
+				left: 30px;
+				background-color: blue;
+			} */
+			/* .fixed {
+				position: fixed;
+				bottom: 10px;
+				right: 20px;
+				background-color: lightcoral;
+			} */
+			/* .absolute {
+				position: absolute;
+				top: 200px;
+				left: 500px;
+				background-color: slateblue;
+			} */
+			/* .sticky {
+				position: sticky;
+				bottom: 0;
+				left: 500px;
+				background-color: cyan;
+			} */
+			.container {
+				position: relative;
+				width: 500px;
+				height: 500px;
+				background-color: gray;
+				border: 2px solid black;
+				z-index: 0;
+			}
+			/* .red-box {
+				position: absolute;
+				top: 30px;
+				left: 30px;
+				background-color: red;
+				width: 200px;
+				height: 200px;
+				border: 2px solid black;
+				z-index: 20;
+			} */
+			/* .blue-box {
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				background-color: blue;
+				width: 200px;
+				height: 200px;
+				border: 2px solid black;
+				z-index: 50;
+			} */
+		</style>
+	</body>
+</html>

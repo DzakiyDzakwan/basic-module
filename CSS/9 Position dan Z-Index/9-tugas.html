@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Perhatikan gambar 9-tugas.png -->
+		<!-- Susun lah ke empat elemen box menggunakan position absolute agar tersusun seperti gambar -->
+		<!-- Jarak overlap antara container dan box adalah 50px -->
+		<!-- clue: nilai top, bottom, left dan right bisa bernilai negatif -->
+		<div class="container">
+			<div class="box kiri-atas"></div>
+			<div class="box kanan-atas"></div>
+			<div class="box kiri-bawah"></div>
+			<div class="box kanan-bawah"></div>
+		</div>
+
+		<style>
+			.container {
+				position: relative;
+				top: 100px;
+				left: 100px;
+				z-index: 0;
+				width: 400px;
+				height: 400px;
+				background-color: orange;
+			}
+			.box {
+				width: 100px;
+				height: 100px;
+				background-color: teal;
+			}
+			.kiri-atas {
+				z-index: 20;
+			}
+			.kanan-atas {
+				z-index: 20;
+			}
+			.kiri-bawah {
+				z-index: 20;
+			}
+			.kanan-bawah {
+				z-index: 20;
+			}
+		</style>
+	</body>
+</html>
