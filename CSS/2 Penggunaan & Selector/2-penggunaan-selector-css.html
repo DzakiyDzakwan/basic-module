@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penggunaan CSS & Selector</title>
+  </head>
+  <body>
+    <!-- INLINE -->
+    <!-- CSS dapat dilakukan di dalam sebuah elemen html langsung melalui atribut style -->
+    <h4 style="color: blue">
+      Contoh implementasi CSS menggunakan atribut style
+    </h4>
+
+    <!-- INTERNAL -->
+    <!-- CSS dapat di kumpulkan ke dalam sebuah tag <style> -->
+    <!-- Tag <style> sebaiknya berada di bagian paling atas dari body, lebih dulu dari kode elemen-elemen html -->
+    <!-- Untuk bisa memilih elemen mana yang ingin di style maka dibutuhkan sebuah selector -->
+    <!-- Ada 3 jenis selector, tag-name, id, dan class -->
+    <p id="contoh-id" class="contoh-class">
+      Contoh implementasi CSS menggunakan tag style
+    </p>
+    <style>
+      /* selector tag name */
+      p {
+        font-size: 24px;
+      }
+      /* selector id */
+      #contoh-id {
+        color: orange;
+      }
+      /* selector class */
+      .contoh-class {
+        font-weight: bold;
+      }
+    </style>
+
+    <!-- EXTERNAL -->
+    <!-- CSS dapat di panggil dari file eksternal dengan format file .css -->
+    <!-- elemen link sebaiknya berada di dalam elemen head -->
+    <span>Contoh implementasi CSS menggunakan file CSS eksternal</span>
+    <link rel="stylesheet" href="1-style.css" />
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* File CSS tidak perlu membungkus kode dengan tag <style> */
+h1 {
+  color: red;
+  font-size: 30px;
+}
+.content {
+  margin: 16px;
+  font-size: 18px;
+}
+#btn-submit {
+  background-color: blue;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+}
