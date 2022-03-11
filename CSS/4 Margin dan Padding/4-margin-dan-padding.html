@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Margin dan Padding</title>
+		<link rel="stylesheet" href="5-margin-dan-padding.css" />
+	</head>
+	<body>
+		<!-- MARGIN -->
+		<!-- Properti margin digunakan untuk menciptakan jarak di sekeliling elemen -->
+		<!-- Kita bisa menentukan lebar margin dari 4 sisi, atas, kanan, bawah, kiri -->
+
+		<!-- PADDING -->
+		<!-- Properti padding digunakan untuk menciptakan jarak di dalam elemen -->
+		<!-- Kita bisa menentukan lebar margin dari 4 sisi, atas, kanan, bawah, kiri -->
+
+		<div class="container">
+			<div class="margin-1">
+				<h2>Margin-Side</h2>
+				<p>margin atas</p>
+				<div class="margin-atas"></div>
+				<p>margin kiri</p>
+				<div class="margin-kiri"></div>
+				<p>margin bawah</p>
+				<div class="margin-bawah"></div>
+				<p>margin kanan</p>
+				<div class="margin-kanan"></div>
+			</div>
+
+			<div class="padding-1">
+				<h2>Padding-Side</h2>
+				<p>padding atas</p>
+				<div class="padding-atas">
+					<div class="konten"></div>
+				</div>
+				<p>padding kiri</p>
+				<div class="padding-kiri">
+					<div class="konten"></div>
+				</div>
+				<p>padding bawah</p>
+				<div class="padding-bawah">
+					<div class="konten"></div>
+				</div>
+				<p>padding kanan</p>
+				<div class="padding-kanan">
+					<div class="konten"></div>
+				</div>
+				<p>padding semua sisi</p>
+				<div class="padding-sisi-semuanya">
+					<div class="konten"></div>
+				</div>
+			</div>
+
+			<div class="margin-2">
+				<h2>Just Margin</h2>
+				<p>margin semua sisi sama</p>
+				<div class="margin-semua-sisi"></div>
+				<p>margin sumbu x-y</p>
+				<div class="margin-sumbu-x-y"></div>
+				<p>margin tiga nilai</p>
+				<div class="margin-tiga-nilai"></div>
+				<p>margin per sisi</p>
+				<div class="margin-per-sisi"></div>
+			</div>
+
+			<div class="padding-2">
+				<h2>Just Padding</h2>
+				<p>padding semua sisi sama</p>
+				<div class="padding-semua-sisi">
+					<div class="konten"></div>
+				</div>
+				<p>padding sumbu x-y</p>
+				<div class="padding-sumbu-x-y">
+					<div class="konten"></div>
+				</div>
+				<p>padding tiga nilai</p>
+				<div class="padding-tiga-nilai">
+					<div class="konten"></div>
+				</div>
+				<p>padding per sisi</p>
+				<div class="padding-per-sisi">
+					<div class="konten"></div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			/* MARGIN-SIDE */
+			.margin-atas {
+				margin-top: 50px;
+			}
+			.margin-kiri {
+				margin-left: 50px;
+			}
+			.margin-bawah {
+				margin-bottom: 50px;
+			}
+			.margin-kanan {
+				margin-right: 50px;
+			}
+			/* JUST MARGIN */
+			.margin-semua-sisi {
+				margin: 30px;
+			}
+			.margin-sumbu-x-y {
+				margin: 30px 20px;
+			}
+			.margin-tiga-nilai {
+				margin: 30px 20px 10px;
+			}
+			.margin-per-sisi {
+				margin: 30px 20px 10px 5px;
+			}
+
+			/* PADDING-SIDE */
+			.padding-atas {
+				padding-top: 30px;
+			}
+			.padding-kiri {
+				padding-left: 30px;
+			}
+			.padding-bawah {
+				padding-bottom: 30px;
+			}
+			.padding-kanan {
+				padding-right: 30px;
+			}
+			.padding-sisi-semuanya {
+				padding-top: 30px;
+				padding-right: 30px;
+				padding-bottom: 30px;
+				padding-left: 30px;
+			}
+			/* JUST PADDING */
+			.padding-semua-sisi {
+				padding: 20px;
+			}
+			.padding-sumbu-x-y {
+				padding: 20px 10px;
+			}
+			.padding-tiga-nilai {
+				padding: 20px 10px 5px;
+			}
+			.padding-per-sisi {
+				padding: 30px 20px 10px 5px;
+			}
+		</style>
+	</body>
+</html>

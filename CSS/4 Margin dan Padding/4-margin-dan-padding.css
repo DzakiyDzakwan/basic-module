@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+.container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+/* MARGIN */
+.margin-atas {
+	background-color: green;
+	width: 100px;
+	height: 100px;
+	/* margin-top: 50px; */
+}
+.margin-kiri {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	/* margin-left: 50px; */
+}
+.margin-bawah {
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	/* margin-bottom: 50px; */
+}
+.margin-kanan {
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+	/* margin-right: 50px; */
+}
+.margin-semua-sisi {
+	background-color: violet;
+	width: 100px;
+	height: 100px;
+	/* margin: 30px; */
+}
+.margin-sumbu-x-y {
+	background-color: violet;
+	width: 100px;
+	height: 100px;
+	/* margin: 30px 20px; */
+}
+.margin-tiga-nilai {
+	background-color: violet;
+	width: 100px;
+	height: 100px;
+	/* margin: 30px 20px 10px; */
+}
+.margin-per-sisi {
+	background-color: violet;
+	width: 100px;
+	height: 100px;
+	/* margin: 30px 20px 10px 5px; */
+}
+
+/* PADDING */
+.padding-atas {
+	background-color: green;
+	width: 100px;
+	height: 100px;
+	/* padding-top: 30px; */
+}
+.padding-kiri {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	/* padding-left: 30px; */
+}
+.padding-bawah {
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	/* padding-bottom: 30px; */
+}
+.padding-kanan {
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+	/* padding-right: 30px; */
+}
+.padding-sisi-semuanya {
+	background-color: green;
+	width: 100px;
+	height: 100px;
+	/* padding-top: 30px; */
+	/* padding-right: 30px; */
+	/* padding-bottom: 30px; */
+	/* padding-left: 30px; */
+}
+.konten {
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+}
+.padding-semua-sisi {
+	background-color: violet;
+	width: 100px;
+	height: 100px;
+	/* padding: 20px; */
+}
+.padding-sumbu-x-y {
+	background-color: violet;
+	width: 100px;
+	height: 100px;
+	/* padding: 20px 10px; */
+}
+.padding-tiga-nilai {
+	background-color: violet;
+	width: 100px;
+	height: 100px;
+	/* padding: 20px 10px 5px; */
+}
+.padding-per-sisi {
+	background-color: violet;
+	width: 100px;
+	height: 100px;
+	/* padding: 30px 20px 10px 5px; */
+}
