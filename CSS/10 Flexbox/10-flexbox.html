@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Flexbox</title>
+	</head>
+	<body>
+		<!-- FLEXBOX -->
+		<!-- Flexbox adalah sebutan untuk sebuah layout yang memiliki parent (container) display flex dan tersusun atas elemen-elemen child (item) -->
+		<!-- Flexbox memiliki properti-properti khusus miliknya -->
+		<!-- Flexbox berfokus kepada elemen parent (container) dari elemen-elemen yang ingin kita susun secara inline -->
+		<h3>Display Flex</h3>
+		<div class="flex">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+
+		<!-- Flex Direction -->
+		<!-- Properti ini menentukan arah dari flex -->
+		<h3>Flex Direction</h3>
+		<div class="flex flex-direction">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+
+		<!-- Flex Wrap -->
+		<!-- Properti ini mengatur elemen child akan berlanjut di baris baru atau tidak -->
+		<h3>Flex Wrap</h3>
+		<div class="flex flex-wrap">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+			<div>13</div>
+			<div>14</div>
+		</div>
+
+		<!-- Justify Content -->
+		<!-- Properti ini mengatur letak elemen child secara horizontal -->
+		<h3>Justify Content</h3>
+		<div class="flex justify-content">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+
+		<!-- Align Items -->
+		<!-- Properti ini mengatur letak elemen child terhadap masing-masing child -->
+		<h3>Align Items</h3>
+		<div class="flex align-items">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+
+		<!-- Align Content -->
+		<!-- Properti ini mengatur letak elemen child secara vertikal -->
+		<h3>Align Content</h3>
+		<div class="flex align-content">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+			<div>13</div>
+			<div>14</div>
+			<div>15</div>
+			<div>16</div>
+			<div>17</div>
+			<div>18</div>
+			<div>19</div>
+			<div>20</div>
+			<div>21</div>
+			<div>22</div>
+			<div>23</div>
+			<div>24</div>
+			<div>25</div>
+			<div>26</div>
+			<div>27</div>
+			<div>28</div>
+			<div>29</div>
+			<div>30</div>
+			<div>31</div>
+			<div>32</div>
+			<div>33</div>
+			<div>34</div>
+			<div>35</div>
+			<div>36</div>
+			<div>37</div>
+			<div>38</div>
+			<div>39</div>
+		</div>
+
+		<!-- Gap -->
+		<!-- Properti ini mengatur jarak antara elemen child -->
+		<h3>Gap</h3>
+		<div class="flex gap">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+			<div>13</div>
+			<div>14</div>
+		</div>
+
+		<!-- Order -->
+		<!-- Properti ini digunakan pada elemen child untuk mengatur urutan flex -->
+		<h3>Order</h3>
+		<div class="flex">
+			<div class="satu">1</div>
+			<div class="dua">2</div>
+			<div class="tiga">3</div>
+		</div>
+
+		<style>
+			.flex {
+				display: flex;
+				height: 200px;
+				background-color: bisque;
+			}
+			.flex div {
+				width: 100px;
+				height: 50px;
+				background-color: aqua;
+				margin: 5px;
+			}
+			.flex-direction {
+				flex-direction: row;
+				/* flex-direction: row-reverse; */
+				/* flex-direction: column; */
+				/* flex-direction: column-reverse; */
+			}
+			.flex-wrap {
+				flex-wrap: nowrap;
+				/* flex-wrap: wrap; */
+				/* flex-wrap: wrap-reverse; */
+			}
+			.justify-content {
+				justify-content: start;
+				/* justify-content: end; */
+				/* justify-content: center; */
+				/* justify-content: space-between; */
+				/* justify-content: space-around; */
+				/* justify-content: space-evenly; */
+			}
+			.align-items {
+				align-items: stretch;
+				/* align-items: flex-start; */
+				/* align-items: flex-end; */
+				/* align-items: center; */
+			}
+			.align-content {
+				height: 300px;
+				flex-wrap: wrap;
+				align-content: center;
+				/* align-content: flex-end; */
+				/* align-content: flex-start; */
+				/* align-content: space-around; */
+				/* align-content: space-between; */
+				/* align-content: stretch; */
+			}
+			.gap {
+				flex-wrap: wrap;
+				gap: 10px 20px;
+				/* row-gap: 10px; */
+				/* column-gap: 20px; */
+			}
+			.satu {
+				order: 0;
+				/* order: 1; */
+				/* order: 2; */
+			}
+			.dua {
+				/* order: 0; */
+				order: 1;
+				/* order: 2; */
+			}
+			.tiga {
+				/* order: 0; */
+				/* order: 1; */
+				order: 2;
+			}
+		</style>
+	</body>
+</html>

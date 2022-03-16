@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Responsive</title>
+	</head>
+	<body>
+		<!-- RESPONSIVE WEB DESIGN -->
+		<!-- Adalah metode untuk menyesuaikan style CSS untuk semua ukuran device -->
+
+		<div>
+			<p class="size">Menyesuaikan ukuran teks</p>
+			<p class="color">Menyesuaikan warna teks</p>
+			<p class="weight">Menyesuaikan tebal teks</p>
+		</div>
+
+		<style>
+			.size {
+				font-size: 16px;
+			}
+			.color {
+				color: black;
+			}
+			.weight {
+				font-weight: 400;
+			}
+
+			@media only screen and (max-width: 500px) {
+				.size {
+					font-size: 12px;
+				}
+				.color {
+					color: blue;
+				}
+				.weight {
+					font-weight: 200;
+				}
+			}
+			@media only screen and (min-width: 600px) and (max-width: 800px) {
+				.size {
+					font-size: 24px;
+				}
+				.color {
+					color: red;
+				}
+				.weight {
+					font-weight: 600;
+				}
+			}
+			@media only screen and (min-width: 900px) {
+				.size {
+					font-size: 32px;
+				}
+				.color {
+					color: green;
+				}
+				.weight {
+					font-weight: 900;
+				}
+			}
+		</style>
+	</body>
+</html>
