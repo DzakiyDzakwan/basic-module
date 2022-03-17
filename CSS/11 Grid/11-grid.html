@@ -9,7 +9,7 @@
 	<body>
 		<!-- GRID -->
 		<!-- Grid merupakan modul CSS yang dikembangkan untuk layout web berbasis grid (jaring-jaring) -->
-		<!-- Grid dapat membagi space nya menjadi maksimal 12 bagian-->
+		<!-- Grid dapat membagi space container menjadi maksimal 12 bagian-->
 		<h3>Grid Template Column</h3>
 		<div class="grid column">
 			<div class="grid-item">1</div>
@@ -21,6 +21,7 @@
 		</div>
 
 		<!-- Grid Template Row -->
+		<!-- Properti ini mengatur tinggi baris -->
 		<h3>Grid Template Row</h3>
 		<div class="grid row">
 			<div class="grid-item">1</div>
@@ -32,6 +33,7 @@
 		</div>
 
 		<!-- Grid Gap -->
+		<!-- Properti gap mengatur jarak antar item -->
 		<h3>Grid Gap</h3>
 		<div class="grid gap">
 			<div class="grid-item">1</div>
@@ -43,6 +45,7 @@
 		</div>
 
 		<!-- Justify Content -->
+		<!-- Properti ini mengatur posisi item secara horizontal -->
 		<h3>Justify Content</h3>
 		<div class="grid justify-content">
 			<div class="grid-item">1</div>
@@ -54,6 +57,7 @@
 		</div>
 
 		<!-- Align Content -->
+		<!-- Properti ini mengatur posisi item secara vertikal -->
 		<h3>Align Content</h3>
 		<div class="grid align-content">
 			<div class="grid-item">1</div>
@@ -65,6 +69,7 @@
 		</div>
 
 		<!-- Grid Column -->
+		<!-- Grid column & grid row mengatur posisi dan lebar kolom dan baris item secara spesifik -->
 		<h3>Grid Column & Row</h3>
 		<div class="grid grid-column-row">
 			<div class="grid-item item-column-row">1</div>
@@ -117,8 +122,8 @@
 			.align-content {
 				height: 300px;
 				grid-template-columns: auto auto auto;
-				align-content: start;
-				/* align-content: stretch; */
+				align-content: stretch;
+				/* align-content: start; */
 				/* align-content: center; */
 				/* align-content: end; */
 				/* align-content: space-around; */
