@@ -1,5 +1,7 @@
 # Javascript Tipe Data dan Operator
 
+- Buatlah file html baru untuk mengerjakan tugas berikut:
+
 1. Mark dan John mencoba membandingkan BMI (Body Mass Index), menggunakan rumus:
 
 - BMI = berat / (tinggi x tinggi)
