@@ -7,6 +7,7 @@
 		<title>JS Tugas 5</title>
 	</head>
 	<body>
+		<!-- Buatlah sebuah event listener dimana jika tombol switch ditekan maka warna background greenyellow akan berpindah ke sisi yang lain -->
 		<style>
 			.grid {
 				display: grid;
@@ -39,21 +40,7 @@
 		</div>
 
 		<script>
-			var btnSwitch = document.getElementById('btn-switch');
-			btnSwitch.addEventListener('click', () => {
-				var leftBox = document.getElementById('left-box');
-				var rightBox = document.getElementById('right-box');
-				if (leftBox.classList.contains('green-background')) {
-					leftBox.classList = [];
-				} else {
-					leftBox.classList.add('green-background');
-				}
-				if (rightBox.classList.contains('green-background')) {
-					rightBox.classList = [];
-				} else {
-					rightBox.classList.add('green-background');
-				}
-			});
+			// Your code here
 		</script>
 	</body>
 </html>
